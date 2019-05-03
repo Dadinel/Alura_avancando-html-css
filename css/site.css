@@ -34,16 +34,16 @@ main a {
     color: #851944;
 }
 
+main a:hover,
+main a:focus,
+footer a:focus,
+footer a:hover {
+    color: red;
+}
+
 main p {
     text-align: justify;
     margin: 1em 0;
-}
-
-main a:hover,
-main a:focus,
-footer a:hover,
-footer a:focus {
-    color: red;
 }
 
 .navegacao-site {
@@ -59,14 +59,14 @@ footer a:focus {
     text-transform: lowercase;
 }
 
-.navegacao-site h1 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
 .navegacao-site a:hover,
 .navegacao-site a:focus {
     text-shadow: 0 0 2px pink;
+}
+
+.navegacao-site h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .rodape-pagina {
@@ -152,19 +152,4 @@ main {
     top: 0;
     right: 0;
     height: 300px;
-}
-
-.citacao-bio:hover,
-.citacao-bio:focus {
-    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
-}
-
-.citacao-bio:nth-of-type(odd):hover,
-.citacao-bio:nth-of-type(odd):focus {
-    transform: scale(1.2) rotate(5deg);
-}
-
-.citacao-bio:nth-of-type(even):hover,
-.citacao-bio:nth-of-type(even):focus {
-    transform: scale(1.2) rotate(-5deg);
 }
